@@ -1,0 +1,985 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+@font-face {
+  font-family: RobotoSlab;
+  src: url(/Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: ElmSans;
+  src: url(/Fonts/ElmsSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(/Fonts/Lato-Regular.ttf);
+}
+
+.social {
+  height: 100vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  z-index: 990;
+}
+
+.social .fa-brands {
+  font-size: 26px;
+}
+
+.social .fa-facebook {
+  color: #0865fe;
+}
+
+.social .fa-twitter {
+  color: #179cf0;
+}
+
+.social .fa-instagram {
+  color: #bc00a6;
+}
+
+.chatButton {
+  height: 50px;
+  width: 200px;
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(145, 113, 113, 1) 50%,
+    rgba(166, 32, 8, 1) 100%
+  );
+  color: white;
+  font-size: 22px;
+  font-family: ElmSans;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 991;
+}
+
+.headerContainer {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .mainpage {
+  text-decoration: none;
+  color: black;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header .logo img {
+  height: 60px;
+  width: 60px;
+}
+
+header .logo .name {
+  list-style: none;
+}
+
+header .logo .name h1 {
+  font-size: 28px;
+  font-family: RobotoSlab;
+}
+
+header .logo .name h4 {
+  font-size: 15px;
+  font-family: ElmSans;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: ElmSans;
+}
+
+header nav .navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav .login {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .login .fa-circle-user {
+  font-size: 18px;
+}
+
+header nav .fa-bars {
+  display: none;
+  font-size: 25px;
+}
+
+main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+main .hero {
+  height: 700px;
+  width: 100%;
+  max-width: 1440px;
+  background-image: url(https://static.wixstatic.com/media/29ecd561610d428a8730c5c4c22450ac.jpg/v1/fill/w_1745,h_680,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/29ecd561610d428a8730c5c4c22450ac.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .hero h1 {
+  color: white;
+  font-size: 50px;
+  font-family: RobotoSlab;
+  opacity: 0;
+  animation: slideUp 2s ease 0.5s normal forwards;
+}
+
+main .hero .herobtn {
+  margin-top: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: ElmSans;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 15px 20px;
+  transition: 0.1s;
+  cursor: pointer;
+  opacity: 0;
+  animation: slideDown 2s ease 0.8s normal forwards;
+}
+
+main .hero .herobtn:hover {
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+main .hero .herobtn:active {
+  box-shadow: 0 0 15px rgb(95, 2, 2) inset;
+}
+
+main .about {
+  width: 100%;
+  max-width: 1440px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-inline: 300px;
+}
+
+main .about .abouth1 {
+  font-size: 40px;
+  font-family: RobotoSlab;
+  opacity: 0;
+  animation: slideUp 2s ease 0.5s normal forwards;
+}
+
+main .about .aboutp {
+  font-size: 20px;
+  font-family: Lato;
+  margin-top: 30px;
+  opacity: 0;
+  animation: fade 2s ease 0.6s normal forwards;
+}
+
+main .cards {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-inline: 50px;
+}
+
+main .cards .card {
+  width: calc(33.333% - 20px);
+  min-width: 300px;
+  text-align: center;
+  background-color: #e2e8dc;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 28px;
+  font-family: ElmSans;
+  margin-top: 20px;
+  color: black;
+  opacity: 0;
+  animation: slideUp 2s ease 0.5s normal forwards;
+}
+
+.card p {
+  font-size: 18px;
+  font-family: Lato;
+  margin-top: 20px;
+  padding-inline: 30px;
+  padding-bottom: 25px;
+  opacity: 0;
+  animation: fade 2s ease 0.6s normal forwards;
+}
+
+.carouselbox {
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  margin-top: 100px;
+  padding-block: 60px;
+  background-image: url("https://static.wixstatic.com/media/7ccb81_b4a039932ca6436793e2e87b115b0722~mv2_d_4961_3567_s_4_2.jpg/v1/fill/w_1905,h_680,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7ccb81_b4a039932ca6436793e2e87b115b0722~mv2_d_4961_3567_s_4_2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bestsel {
+  color: white;
+  font-size: 40px;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  font-family: RobotoSlab;
+}
+
+main .carousel {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.choice {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  padding: 20px;
+}
+
+.choice h1,
+h2 {
+  color: white;
+  font-family: ElmSans;
+}
+
+.carouselbtn {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: ElmSans;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 15px 20px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.carouselbtn:hover {
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.carouselbtn:active {
+  box-shadow: 0 0 15px rgb(95, 2, 2) inset;
+}
+
+main .lama {
+  width: 100%;
+  max-width: 1440px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-inline: 300px;
+}
+
+.lamah1 {
+  font-size: 50px;
+  font-family: RobotoSlab;
+  opacity: 0;
+  animation: fade 3s ease 0.6s normal forwards;
+}
+
+.lamah3 {
+  font-size: 28px;
+  font-family: ElmSans;
+  margin-top: 30px;
+  opacity: 0;
+  animation: slideUp 2s ease 0.5s normal forwards;
+}
+
+.teachersbox {
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  background-color: #e2e8dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 60px;
+}
+
+.teachersboxh1 {
+  font-size: 40px;
+  font-family: RobotoSlab;
+  margin-bottom: 60px;
+  opacity: 0;
+  animation: slideUp 2s ease 0.5s normal forwards;
+}
+
+.teachercards {
+  height: auto;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.identity {
+  height: auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.identity img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.identity .teachersboxh2 {
+  font-size: 22px;
+  font-family: ElmSans;
+  color: black;
+  opacity: 0;
+  animation: slideUp 2s ease 0.7s normal forwards;
+}
+
+.identity .teachersboxh3 {
+  font-size: 18px;
+  font-family: ElmSans;
+  text-align: center;
+  opacity: 0;
+  animation: slideUp 2s ease 0.9s normal forwards;
+}
+
+.identity .teachersboxa {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: ElmSans;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px 20px;
+  transition: 0.1s;
+  cursor: pointer;
+  opacity: 0;
+  animation: slideDown 2s ease 1.1s normal forwards;
+}
+
+.identity .teachersboxa:hover {
+  background-color: rgb(102, 99, 99);
+}
+
+.identity .teachersboxa:active {
+  background-color: black;
+  box-shadow: 0 0 15px red inset;
+}
+
+.stayconnected {
+  height: auto;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 20px;
+  padding-bottom: 60px;
+}
+
+.connectionh1 {
+  margin-top: 100px;
+  font-size: 40px;
+  font-family: RobotoSlab;
+  font-weight: lighter;
+  opacity: 0;
+  animation: slideUp 2s ease 0.5s normal forwards;
+}
+
+.connectionp {
+  font-size: 18px;
+  opacity: 0;
+  animation: slideUp 2s ease 0.8s normal forwards;
+}
+
+.connection {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  width: 100%;
+  max-width: 930px;
+}
+
+.connection label {
+  font-size: 15px;
+}
+
+.nameside {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#name {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.emailside {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 2;
+}
+
+#email {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.inputbtn {
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-family: ElmSans;
+  background-color: black;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.inputbtn:hover {
+  background-color: rgb(102, 99, 99);
+}
+
+.inputbtn:active {
+  background-color: black;
+  box-shadow: 0 0 15px red inset;
+}
+
+.joinusonmobile {
+  width: 100%;
+  max-width: 930px;
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.meditapp {
+  width: 40%;
+}
+
+.meditapp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.downloadapp {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 40px;
+  gap: 25px;
+  background-color: #fbfbfb;
+}
+
+.downloadh1 {
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: RobotoSlab;
+}
+
+.downloadp {
+  font-size: 18px;
+}
+
+.phone label {
+  font-size: 15px;
+}
+
+.phone {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.countryside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100px;
+}
+
+.numberside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+#country {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 5px;
+}
+
+#number {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 5px;
+}
+
+.phonebtn {
+  width: 80px;
+  height: 40px;
+  color: white;
+  font-family: ElmSans;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.1s;
+  border: none;
+}
+
+.phonebtn:hover {
+  background-color: rgb(102, 99, 99);
+}
+
+.phonebtn:active {
+  background-color: black;
+  box-shadow: 0 0 15px red inset;
+}
+
+.gotolinks {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.gotolinks .qr {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 90px;
+  width: 90px;
+}
+
+.stores {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stores img {
+  height: 40px;
+  width: auto;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #e2e8dc;
+  font-size: 16px;
+  font-family: ElmSans;
+}
+
+footer .footerul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 1340px) {
+  main .about {
+    padding-inline: 150px;
+  }
+
+  main .lama {
+    padding-inline: 100px;
+  }
+}
+
+@media (max-width: 1100px) {
+  header {
+    padding-inline: 30px;
+  }
+  
+  header nav .navigation {
+    gap: 15px;
+  }
+
+  header nav a {
+    font-size: 15px;
+  }
+
+  main .cards .card {
+    width: calc(50% - 15px); 
+  }
+
+  main .about {
+    padding-inline: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .social {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding-block: 20px;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .headerContainer {
+    position: static; 
+    height: auto;
+    padding-top: 10px;
+  }
+
+  main {
+    margin-bottom: 60px;
+  }
+
+  main .about {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-inline: 40px;
+  }
+
+  .connection {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .inputbtn {
+    position: static;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  header nav .navigation,
+  header nav .login {
+    display: none; 
+  }
+
+  main .hero {
+    height: 500px;
+  }
+
+  main .hero h1 {
+    font-size: 38px;
+    text-align: center;
+    padding-inline: 20px;
+  }
+
+  main .cards .card {
+    width: 100%; 
+    max-width: 450px;
+  }
+
+  main .lama {
+    padding-inline: 30px;
+  }
+
+  .lamah1 {
+    font-size: 32px;
+  }
+
+  .choice {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .joinusonmobile {
+    flex-direction: column;
+  }
+
+  .meditapp {
+    width: 100%;
+    height: 250px;
+  }
+
+  .downloadapp {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .logo .name h1 {
+    font-size: 22px;
+  }
+
+  header .logo .name h4 {
+    font-size: 12px;
+  }
+
+  header .logo img {
+    height: 45px;
+    width: 45px;
+  }
+
+  main .about .abouth1, 
+  .teachersboxh1, 
+  .connectionh1, 
+  .downloadh1 {
+    font-size: 30px;
+  }
+
+  .phone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .countryside, .numberside, .phonebtn {
+    width: 100%;
+  }
+
+  .gotolinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding-inline: 15px;
+  }
+
+  header .logo .name h4 {
+    display: none; 
+  }
+
+  main .hero h1 {
+    font-size: 28px;
+  }
+
+  main .about {
+    padding-inline: 15px;
+  }
+
+  main .about .aboutp {
+    font-size: 16px;
+  }
+
+  main .cards {
+    padding-inline: 15px;
+  }
+
+  main .cards .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card p {
+    padding-inline: 15px;
+    font-size: 16px;
+  }
+
+  .bestsel {
+    font-size: 26px;
+  }
+
+  .lamah1 {
+    font-size: 24px;
+  }
+
+  .lamah3 {
+    font-size: 20px;
+  }
+
+  .teachersboxh1 {
+    margin-bottom: 40px;
+  }
+
+  .identity {
+    width: 100%;
+  }
+
+  footer {
+    height: auto;
+    padding-block: 30px;
+  }
+
+  footer .footerul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .chatButton {
+    width: 160px;
+    font-size: 16px;
+    height: 45px;
+  }
+}

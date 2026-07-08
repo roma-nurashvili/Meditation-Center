@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url(/Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ElmSans;
+    src: url(/Fonts/ElmsSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(/Fonts/Lato-Regular.ttf);
+}
+
+.social {
+    height: 100vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    position: fixed;
+    left: 20px;
+    z-index: 990;
+}
+
+.social .fa-brands {
+    font-size: 26px;
+}
+
+.social .fa-facebook {
+    color: #0865FE;
+}
+
+.social .fa-twitter {
+    color: #179CF0;
+}
+
+.social .fa-instagram {
+    color: #BC00A6;
+}
+
+.chatButton {
+    height: 50px;
+    width: 200px;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(145, 113, 113, 1) 50%, rgba(166, 32, 8, 1) 100%);
+    color: white;
+    font-size: 22px;
+    font-family: ElmSans;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 991;
+}
+
+.headerContainer {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .mainpage {
+    text-decoration: none;
+    color: black;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header .logo img {
+    height: 60px;
+    width: 60px;
+}
+
+header .logo .name {
+    list-style: none;
+}
+
+header .logo .name h1 {
+    font-size: 28px;
+    font-family: RobotoSlab;
+}
+
+header .logo .name h4 {
+    font-size: 15px;
+    font-family: ElmSans;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav .fa-bars {
+    display: none;
+    font-size: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: ElmSans;
+}
+
+header nav .navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav .login {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav .login .fa-circle-user {
+    font-size: 18px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+
+main .maincontainer {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-inline: 40px;
+}
+
+.maincontainer .firsth1 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: RobotoSlab;
+    opacity: 0;
+    animation: slideUp 2s ease 0.8s normal forwards;
+}
+
+.maincontainer .firstp {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideUp 2s ease 1s normal forwards;
+    text-align: center;
+}
+
+.cardcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-block: 20px;
+}
+
+.card {
+    width: calc(25% - 23px);
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fade 3s ease 0.5s normal forwards;
+    background-color: white;
+}
+
+.upper {
+    width: 100%;
+    border: 0.5px solid black;
+    border-bottom: none;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.relative {
+    position: relative;
+    background-color: #F4F3F5;
+}
+
+.absolute {
+    position: absolute;
+    top: -15px;
+    background-color: yellowgreen;
+    padding: 5px 15px;
+}
+
+.absolute h3 {
+    font-size: 14px;
+    color: white;
+    font-family: ElmSans;
+}
+
+.upper h2 {
+    font-size: 24px;
+    font-family: ElmSans;
+}
+
+.upper h1 {
+    font-size: 55px;
+    font-family: RobotoSlab;
+    line-height: 1;
+}
+
+.upper sup {
+    font-size: 20px;
+    vertical-align: super;
+}
+
+.upper p {
+    font-size: 15px;
+}
+
+.upper button {
+    width: 100%;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    font-size: 18px;
+    font-family: ElmSans;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.h1sub {
+    font-size: 12px;
+    color: #666;
+}
+
+.below {
+    width: 100%;
+    flex: 1;
+    border: 0.5px solid black;
+    padding: 30px 20px;
+}
+
+.below ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.below ul li {
+    font-size: 15px;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #E2E8DC;
+    font-size: 16px;
+    font-family: ElmSans;
+}
+
+footer .footerul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 1300px) {
+    .card {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 990px) {
+    .social {
+        position: static;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        padding-block: 15px;
+        width: 100%;
+    }
+
+    .headerContainer {
+        position: static;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    main {
+        padding-top: 20px;
+    }
+
+    .maincontainer {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-inline: 20px;
+    }
+
+    header nav .fa-bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    header nav .navigation,
+    header nav .login {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 500px) {
+    header .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    header .logo .name h1 {
+        font-size: 20px;
+    }
+
+    header .logo .name h4 {
+        display: none;
+    }
+
+    .maincontainer .firsth1 {
+        font-size: 28px;
+    }
+
+    .maincontainer .firstp {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        height: auto;
+        padding-block: 25px;
+    }
+
+    footer .footerul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .chatButton {
+        width: 160px;
+        font-size: 16px;
+        height: 45px;
+    }
+}

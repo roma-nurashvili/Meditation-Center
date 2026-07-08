@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url(/Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ElmSans;
+    src: url(/Fonts/ElmsSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(/Fonts/Lato-Regular.ttf);
+}
+
+.social {
+  height: 100vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  z-index: 990;
+}
+
+.social .fa-brands {
+  font-size: 26px;
+}
+
+.social .fa-facebook {
+  color: #0865fe;
+}
+
+.social .fa-twitter {
+  color: #179cf0;
+}
+
+.social .fa-instagram {
+  color: #bc00a6;
+}
+
+.chatButton {
+  height: 50px;
+  width: 200px;
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(145, 113, 113, 1) 50%,
+    rgba(166, 32, 8, 1) 100%
+  );
+  color: white;
+  font-size: 22px;
+  font-family: ElmSans;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 991;
+}
+
+.headerContainer {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .mainpage {
+  text-decoration: none;
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header .logo img {
+  height: 60px;
+  width: 60px;
+}
+
+header .logo .name {
+  list-style: none;
+}
+
+header .logo .name h1 {
+  font-size: 28px;
+  font-family: RobotoSlab;
+}
+
+header .logo .name h4 {
+  font-size: 15px;
+  font-family: ElmSans;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+header nav .fa-bars {
+    display: none;
+    font-size: 25px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: ElmSans;
+}
+
+header nav .navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav .login {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .login .fa-circle-user {
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images3.alphacoders.com/140/1402329.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+form {
+  width: 450px;
+  height: 550px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 5px 5px white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+}
+
+form h2 {
+  font-size: 30px;
+  font-family: RobotoSlab;
+}
+
+form a {
+    text-decoration: none;
+    color: white;
+}
+
+.register {
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+form button {
+    height: 50px;
+    width: 200px;
+    background-color: #A38596;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px white;
+    color: white;
+    font-size: 20px;
+    font-family: ElmSans;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#checkbox:checked {
+    accent-color: #A38596;
+}
+
+.inputform {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+label {
+    font-size: 16px;
+}
+
+#email,
+#pass {
+  height: 40px;
+  width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline-color: #A38596;
+  margin-top: 5px;
+}
+
+#email {
+    margin-bottom: 20px;
+}
+
+.checking {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 0;
+  font-size: 16px;
+  font-family: ElmSans;
+  color: white;
+  z-index: 1000;
+}
+
+footer .footerul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+    .headerContainer {
+        padding-inline: 20px;
+        position: fixed;
+        top: 50px;
+    }
+
+    header nav .fa-bars {
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+
+    header nav ul,
+    header nav a {
+        display: none;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .inputform {
+        width: 100%;
+    }
+
+    #email,
+    #pass {
+        width: 100%;
+    }
+
+    .checking {
+        width: 100%;
+    }
+
+    footer .footerul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .social {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        flex-direction: row;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        z-index: 1001;
+    }
+
+    form {
+        width: 85%;
+        height: auto;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .social {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        flex-direction: row;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        z-index: 1001;
+    }
+
+    .chatButton {
+        width: 150px;
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .headerContainer {
+        padding-inline: 15px;
+        position: fixed;
+        top: 50px;
+    }
+
+    header .logo img {
+        height: 36px;
+        width: 36px;
+    }
+
+    header .logo .name h1 {
+        font-size: 18px;
+        color: white;
+    }
+
+    header .logo .name h4 {
+        display: none;
+    }
+
+    main {
+        justify-content: center;
+        padding-inline: 15px;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+        padding: 25px 15px;
+        gap: 15px;
+    }
+
+    form h2 {
+        font-size: 22px;
+    }
+
+    .inputform {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    #email,
+    #pass {
+        width: 100%;
+    }
+
+    .checking {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    form button {
+        width: 160px;
+        height: 44px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .register {
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+        padding-block: 15px;
+    }
+
+    footer .footerul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+}

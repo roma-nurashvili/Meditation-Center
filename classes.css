@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url(/Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ElmSans;
+    src: url(/Fonts/ElmsSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(/Fonts/Lato-Regular.ttf);
+}
+
+.social {
+    height: 100vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    position: fixed;
+    left: 20px;
+    z-index: 990;
+}
+
+.social .fa-brands {
+    font-size: 26px;
+}
+
+.social .fa-facebook {
+    color: #0865FE;
+}
+
+.social .fa-twitter {
+    color: #179CF0;
+}
+
+.social .fa-instagram {
+    color: #BC00A6;
+}
+
+.chatButton {
+    height: 50px;
+    width: 200px;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(145, 113, 113, 1) 50%, rgba(166, 32, 8, 1) 100%);
+    color: white;
+    font-size: 22px;
+    font-family: ElmSans;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 991;
+}
+
+.headerContainer {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .mainpage {
+    text-decoration: none;
+    color: black;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header .logo img {
+    height: 60px;
+    width: 60px;
+}
+
+header .logo .name {
+    list-style: none;
+}
+
+header .logo .name h1 {
+    font-size: 28px;
+    font-family: RobotoSlab;
+}
+
+header .logo .name h4 {
+    font-size: 15px;
+    font-family: ElmSans;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav .fa-bars {
+    display: none;
+    font-size: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: ElmSans;
+}
+
+header nav .navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav .login {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav .login .fa-circle-user {
+    font-size: 18px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 120px;
+}
+
+main .classcontent {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-inline: 50px;
+}
+
+.classcontent h1 {
+    margin-top: 50px;
+    font-family: RobotoSlab;
+    opacity: 0;
+    animation: slideUp 2s ease 0.8s normal forwards;
+}
+
+.classcontent .lorem {
+    margin-inline: 200px;
+    text-align: center;
+    margin-bottom: 200px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fade 3s ease 1s normal forwards;
+}
+
+.classcardbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.classcard {
+    border: 0.5px solid grey;
+    width: calc(25% - 23px);
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fade 3s ease 0.5s normal forwards;
+    background-color: #fff;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    margin-block: 5px;
+}
+
+.classcard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardtext {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+}
+
+.cardtext h2 {
+    font-family: ElmSans;
+    font-size: 20px;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classcard .card {
+    font-size: 16px;
+    color: #555;
+}
+
+.book {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    height: 35px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.1s;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.book:hover {
+    background-color: rgb(102, 99, 99);
+}
+
+.book:active {
+    background-color: black;
+    box-shadow: 0 0 15px red inset;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #E2E8DC;
+    font-size: 16px;
+    font-family: ElmSans;
+}
+
+footer .footerul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 1300px) {
+    .classcard {
+        width: calc(33.333% - 20px);
+    }
+    .classcontent .lorem {
+        margin-inline: 100px;
+    }
+}
+
+@media (max-width: 990px) {
+    .social {
+        position: static;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        padding-block: 15px;
+        width: 100%;
+    }
+
+    .headerContainer {
+        position: static;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    main {
+        padding-block: 20px;
+    }
+
+    .classcard {
+        width: calc(50% - 15px);
+    }
+
+    .classcontent .lorem {
+        margin-inline: 40px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-inline: 20px;
+    }
+
+    header nav .fa-bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    header nav .navigation,
+    header nav .login {
+        display: none;
+    }
+
+    .classcontent {
+        padding-inline: 20px;
+    }
+
+    .classcontent h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    header .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    header .logo .name h1 {
+        font-size: 20px;
+    }
+
+    header .logo .name h4 {
+        display: none;
+    }
+
+    .classcontent h1 {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    .classcontent .lorem {
+        margin-inline: 0;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .classcardbox {
+        gap: 25px;
+    }
+
+    .classcard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .classcard img {
+        height: 180px;
+    }
+
+    .cardtext h2 {
+        font-size: 18px;
+        min-height: auto;
+    }
+
+    footer {
+        height: auto;
+        padding-block: 25px;
+    }
+
+    footer .footerul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .chatButton {
+        width: 160px;
+        font-size: 16px;
+        height: 45px;
+    }
+}
