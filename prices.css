@@ -227,6 +227,8 @@ main .maincontainer {
     align-items: center;
     text-align: center;
     gap: 15px;
+    min-height: 380px;
+    flex: 1;
 }
 
 .relative {
@@ -290,6 +292,7 @@ main .maincontainer {
     flex: 1;
     border: 0.5px solid black;
     padding: 30px 20px;
+    min-height: 380px;
 }
 
 .below ul {
