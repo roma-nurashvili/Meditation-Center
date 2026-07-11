@@ -6,18 +6,18 @@
 }
 
 @font-face {
-    font-family: RobotoSlab;
-    src: url(/Fonts/RobotoSlab-VariableFont_wght.ttf);
+  font-family: RobotoSlab;
+  src: url(/Fonts/RobotoSlab-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: ElmSans;
-    src: url(/Fonts/ElmsSans-VariableFont_wght.ttf);
+  font-family: ElmSans;
+  src: url(/Fonts/ElmsSans-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Lato;
-    src: url(/Fonts/Lato-Regular.ttf);
+  font-family: Lato;
+  src: url(/Fonts/Lato-Regular.ttf);
 }
 
 .social {
@@ -110,8 +110,8 @@ header nav {
 }
 
 header nav .fa-bars {
-    display: none;
-    font-size: 25px;
+  display: none;
+  font-size: 25px;
 }
 
 header nav a {
@@ -180,36 +180,36 @@ form h2 {
 }
 
 form a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .register {
-    font-size: 20px;
-    text-decoration: underline;
-    margin-top: 50px;
+  font-size: 20px;
+  text-decoration: underline;
+  margin-top: 50px;
 }
 
 strong {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 form button {
-    height: 50px;
-    width: 200px;
-    background-color: #A38596;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px white;
-    color: white;
-    font-size: 20px;
-    font-family: ElmSans;
-    cursor: pointer;
-    margin-top: 30px;
+  height: 50px;
+  width: 200px;
+  background-color: #a38596;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px white;
+  color: white;
+  font-size: 20px;
+  font-family: ElmSans;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 #checkbox:checked {
-    accent-color: #A38596;
+  accent-color: #a38596;
 }
 
 .inputform {
@@ -219,7 +219,7 @@ form button {
 }
 
 label {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #email,
@@ -229,12 +229,12 @@ label {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  outline-color: #A38596;
+  outline-color: #a38596;
   margin-top: 5px;
 }
 
 #email {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .checking {
@@ -245,15 +245,15 @@ label {
 }
 
 .checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 #checkbox {
-    height: 20px;
-    width: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 footer {
@@ -280,165 +280,165 @@ footer .footerul {
 }
 
 @media (max-width: 800px) {
-    .headerContainer {
-        padding-inline: 20px;
-        position: fixed;
-        top: 50px;
-    }
+  .social {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    z-index: 1001;
+  }
 
-    header nav .fa-bars {
-        display: block;
-        cursor: pointer;
-        color: white;
-    }
+  .headerContainer {
+    padding-inline: 20px;
+    position: fixed;
+    top: 50px;
+  }
 
-    header nav ul,
-    header nav a {
-        display: none;
-    }
+  header nav .fa-bars {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
 
-    main {
-        justify-content: center;
-    }
+  header nav ul,
+  header nav a {
+    display: none;
+  }
 
-    form {
-        width: 90%;
-        max-width: 400px;
-    }
+  main {
+    justify-content: center;
+  }
 
-    .inputform {
-        width: 100%;
-    }
+  form {
+    width: 90%;
+    max-width: 400px;
+  }
 
-    #email,
-    #pass {
-        width: 100%;
-    }
+  .inputform {
+    width: 100%;
+  }
 
-    .checking {
-        width: 100%;
-    }
+  #email,
+  #pass {
+    width: 100%;
+  }
 
-    footer .footerul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        text-align: center;
-    }
+  .checking {
+    width: 100%;
+  }
+
+  footer .footerul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 600px) {
-    .social {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50px;
-        flex-direction: row;
-        justify-content: center;
-        backdrop-filter: blur(10px);
-        z-index: 1001;
-    }
-
-    form {
-        width: 85%;
-        height: auto;
-        padding: 30px 20px;
-    }
+  form {
+    width: 85%;
+    height: auto;
+    padding: 30px 20px;
+  }
 }
 
 @media (max-width: 500px) {
-    .social {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50px;
-        flex-direction: row;
-        justify-content: center;
-        backdrop-filter: blur(10px);
-        z-index: 1001;
-    }
+  .social {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    z-index: 1001;
+  }
 
-    .chatButton {
-        width: 150px;
-        font-size: 16px;
-        gap: 8px;
-    }
+  .chatButton {
+    width: 150px;
+    font-size: 16px;
+    gap: 8px;
+  }
 
-    .headerContainer {
-        padding-inline: 15px;
-        position: fixed;
-        top: 50px;
-    }
+  .headerContainer {
+    padding-inline: 15px;
+    position: fixed;
+    top: 50px;
+  }
 
-    header .logo img {
-        height: 36px;
-        width: 36px;
-    }
+  header .logo img {
+    height: 36px;
+    width: 36px;
+  }
 
-    header .logo .name h1 {
-        font-size: 18px;
-        color: white;
-    }
+  header .logo .name h1 {
+    font-size: 18px;
+    color: white;
+  }
 
-    header .logo .name h4 {
-        display: none;
-    }
+  header .logo .name h4 {
+    display: none;
+  }
 
-    main {
-        justify-content: center;
-        padding-inline: 15px;
-    }
+  main {
+    justify-content: center;
+    padding-inline: 15px;
+  }
 
-    form {
-        width: 100%;
-        height: auto;
-        padding: 25px 15px;
-        gap: 15px;
-    }
+  form {
+    width: 100%;
+    height: auto;
+    padding: 25px 15px;
+    gap: 15px;
+  }
 
-    form h2 {
-        font-size: 22px;
-    }
+  form h2 {
+    font-size: 22px;
+  }
 
-    .inputform {
-        margin-top: 15px;
-        width: 100%;
-    }
+  .inputform {
+    margin-top: 15px;
+    width: 100%;
+  }
 
-    #email,
-    #pass {
-        width: 100%;
-    }
+  #email,
+  #pass {
+    width: 100%;
+  }
 
-    .checking {
-        width: 100%;
-        font-size: 14px;
-    }
+  .checking {
+    width: 100%;
+    font-size: 14px;
+  }
 
-    form button {
-        width: 160px;
-        height: 44px;
-        font-size: 16px;
-        margin-top: 15px;
-    }
+  form button {
+    width: 160px;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
 
-    .register {
-        font-size: 14px;
-        margin-top: 20px;
-        text-align: center;
-    }
+  .register {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+  }
 
-    footer {
-        height: auto;
-        padding-block: 15px;
-    }
+  footer {
+    height: auto;
+    padding-block: 15px;
+  }
 
-    footer .footerul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
-    }
+  footer .footerul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
 }
