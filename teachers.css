@@ -52,8 +52,7 @@
 .chatButton {
     height: 50px;
     width: 200px;
-    background: #2A7B9B;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(145, 113, 113, 1) 50%, rgba(166, 32, 8, 1) 100%);
+    background-color: #b6c8a5;
     color: white;
     font-size: 22px;
     font-family: ElmSans;

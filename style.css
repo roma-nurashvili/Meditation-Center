@@ -52,13 +52,7 @@
 .chatButton {
   height: 50px;
   width: 200px;
-  background: #2a7b9b;
-  background: linear-gradient(
-    90deg,
-    rgba(42, 123, 155, 1) 0%,
-    rgba(145, 113, 113, 1) 50%,
-    rgba(166, 32, 8, 1) 100%
-  );
+  background-color: #b6c8a5;
   color: white;
   font-size: 22px;
   font-family: ElmSans;
@@ -745,8 +739,12 @@ footer .footerul {
 }
 
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1340px) {
@@ -763,7 +761,7 @@ footer .footerul {
   header {
     padding-inline: 30px;
   }
-  
+
   header nav .navigation {
     gap: 15px;
   }
@@ -773,7 +771,7 @@ footer .footerul {
   }
 
   main .cards .card {
-    width: calc(50% - 15px); 
+    width: calc(50% - 15px);
   }
 
   main .about {
@@ -793,7 +791,7 @@ footer .footerul {
   }
 
   .headerContainer {
-    position: static; 
+    position: static;
     height: auto;
     padding-top: 10px;
   }
@@ -828,7 +826,7 @@ footer .footerul {
 
   header nav .navigation,
   header nav .login {
-    display: none; 
+    display: none;
   }
 
   main .hero {
@@ -842,7 +840,7 @@ footer .footerul {
   }
 
   main .cards .card {
-    width: 100%; 
+    width: 100%;
     max-width: 450px;
   }
 
@@ -888,9 +886,9 @@ footer .footerul {
     width: 45px;
   }
 
-  main .about .abouth1, 
-  .teachersboxh1, 
-  .connectionh1, 
+  main .about .abouth1,
+  .teachersboxh1,
+  .connectionh1,
   .downloadh1 {
     font-size: 30px;
   }
@@ -900,7 +898,9 @@ footer .footerul {
     align-items: flex-start;
   }
 
-  .countryside, .numberside, .phonebtn {
+  .countryside,
+  .numberside,
+  .phonebtn {
     width: 100%;
   }
 
@@ -917,7 +917,7 @@ footer .footerul {
   }
 
   header .logo .name h4 {
-    display: none; 
+    display: none;
   }
 
   main .hero h1 {

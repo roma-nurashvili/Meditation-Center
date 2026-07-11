@@ -49,32 +49,6 @@
   color: #bc00a6;
 }
 
-.chatButton {
-  height: 50px;
-  width: 200px;
-  background: #2a7b9b;
-  background: linear-gradient(
-    90deg,
-    rgba(42, 123, 155, 1) 0%,
-    rgba(145, 113, 113, 1) 50%,
-    rgba(166, 32, 8, 1) 100%
-  );
-  color: white;
-  font-size: 22px;
-  font-family: ElmSans;
-  border: none;
-  border-radius: 10px 10px 0 0;
-  position: fixed;
-  bottom: 0;
-  right: 20px;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 991;
-}
-
 .headerContainer {
   height: 120px;
   width: 100%;
