@@ -151,6 +151,7 @@ header nav .login .fa-circle-user {
   align-items: center;
   padding-top: 140px; 
   padding-bottom: 140px; 
+  z-index: 999;
 }
 
 main {
@@ -327,19 +328,20 @@ label {
 
 footer {
   width: 100%;
-  height: 120px;
+  min-height: 120px;
+  padding-block: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   backdrop-filter: blur(10px);
   position: fixed;
   bottom: 0;
   font-size: 16px;
   font-family: ElmSans;
   color: white;
-  z-index: 1000;
+  z-index: 996;
 }
 
 footer .footerul {
@@ -395,7 +397,7 @@ footer .footerul {
   
   .container {
     padding-top: 190px; 
-    padding-bottom: 150px;
+    padding-bottom: 190px;
   }
 }
 
@@ -466,7 +468,7 @@ footer .footerul {
 
   .container {
     padding-top: 160px; 
-    padding-bottom: 150px; 
+    padding-bottom: 260px; 
   }
 
   main {
@@ -515,7 +517,6 @@ footer .footerul {
   }
 
   footer {
-    height: auto;
     padding-block: 20px;
   }
 
