@@ -1,449 +1,566 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Lato;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
 }
 
 @font-face {
-    font-family: RobotoSlab;
-    src: url(/Fonts/RobotoSlab-VariableFont_wght.ttf);
+  font-family: RobotoSlab;
+  src: url(/Fonts/RobotoSlab-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: ElmSans;
-    src: url(/Fonts/ElmsSans-VariableFont_wght.ttf);
+  font-family: ElmSans;
+  src: url(/Fonts/ElmsSans-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Lato;
-    src: url(/Fonts/Lato-Regular.ttf);
+  font-family: Lato;
+  src: url(/Fonts/Lato-Regular.ttf);
 }
 
 .social {
-    height: 100vh;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    align-items: center;
-    position: fixed;
-    left: 20px;
-    z-index: 990;
+  height: 100vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  z-index: 990;
 }
 
 .social .fa-brands {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .social .fa-facebook {
-    color: #0865FE;
+  color: #0865fe;
 }
 
 .social .fa-twitter {
-    color: #179CF0;
+  color: #179cf0;
 }
 
 .social .fa-instagram {
-    color: #BC00A6;
+  color: #bc00a6;
 }
 
 .chatButton {
-    height: 50px;
-    width: 200px;
-    background-color: #b6c8a5;
-    color: white;
-    font-size: 22px;
-    font-family: ElmSans;
-    border: none;
-    border-radius: 10px 10px 0 0;
-    position: fixed;
-    bottom: 0;
-    right: 20px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 991;
+  height: 50px;
+  width: 200px;
+  background-color: #b6c8a5;
+  color: white;
+  font-size: 22px;
+  font-family: ElmSans;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 991;
 }
 
 .headerContainer {
-    height: 120px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    z-index: 1;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 header {
-    height: 80px;
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .mainpage {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 header .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 header .logo img {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 header .logo .name {
-    list-style: none;
+  list-style: none;
 }
 
 header .logo .name h1 {
-    font-size: 28px;
-    font-family: RobotoSlab;
+  font-size: 28px;
+  font-family: RobotoSlab;
 }
 
 header .logo .name h4 {
-    font-size: 15px;
-    font-family: ElmSans;
+  font-size: 15px;
+  font-family: ElmSans;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
 
 header nav .fa-bars {
-    display: none;
-    font-size: 25px;
+  display: none;
+  font-size: 25px;
 }
 
 header nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-family: ElmSans;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: ElmSans;
 }
 
 header nav .navigation {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 header nav .login {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 header nav .login .fa-circle-user {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.burgerMenu {
+  height: 100svh;
+  width: 100%;
+  position: fixed;
+  top: 150px;
+  right: -100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: start;
+  background-color: white;
+  z-index: 999;
+  padding: 50px;
+  transition: 0.3s;
+}
+
+.burgerNavigation {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgerNavigation li {
+  background-color: #b6c8a5;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burgerNavigation li a {
+  text-decoration: none;
+  color: white;
+}
+
+.burgerLogin {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  background-color: #b6c8a5;
+  border-radius: 10px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgerLogina {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.show {
+  right: 0;
 }
 
 .maincontainer {
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    text-align: center;
-    gap: 30px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  text-align: center;
+  gap: 30px;
 }
 
 .firsth1 {
-    font-family: RobotoSlab;
-    opacity: 0;
-    animation: slideUp 2s ease 0.5s normal forwards;
+  font-family: RobotoSlab;
+  opacity: 0;
+  animation: slideUp 2s ease 0.5s normal forwards;
 }
 
 .firstp {
-    padding-inline: 300px;
-    opacity: 0;
-    animation: fade 3s ease 0.8s normal forwards;
+  padding-inline: 300px;
+  opacity: 0;
+  animation: fade 3s ease 0.8s normal forwards;
 }
 
 .teachercv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 100px;
-    border-radius: 20px;
-    padding: 50px 300px;
-    background-color: #E2E8DC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+  border-radius: 20px;
+  padding: 50px 300px;
+  background-color: #e2e8dc;
 }
 
 .teachercv img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 .teachercv h1 {
-    font-family: RobotoSlab;
-    opacity: 0;
-    animation: slideUp 2s ease 0.8s normal forwards;
+  font-family: RobotoSlab;
+  opacity: 0;
+  animation: slideUp 2s ease 0.8s normal forwards;
 }
 
 .teachercv h3 {
-    font-family: ElmSans;
-    opacity: 0;
-    animation: slideUp 2s ease 1s normal forwards;
+  font-family: ElmSans;
+  opacity: 0;
+  animation: slideUp 2s ease 1s normal forwards;
 }
 
 .teachercv p {
-    opacity: 0;
-    animation: fade 3s ease 1.3s normal forwards;
+  opacity: 0;
+  animation: fade 3s ease 1.3s normal forwards;
 }
 
 .teachercv a {
-    text-decoration: none;
-    font-family: ElmSans;
-    color: black;
-    opacity: 0;
-    animation: slideDown 2s ease 1.5s normal forwards;
+  text-decoration: none;
+  font-family: ElmSans;
+  color: black;
+  opacity: 0;
+  animation: slideDown 2s ease 1.5s normal forwards;
 }
 
 footer {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    background-color: #E2E8DC;
-    font-size: 16px;
-    font-family: ElmSans;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #e2e8dc;
+  font-size: 16px;
+  font-family: ElmSans;
 }
 
 footer .footerul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 @keyframes slideUp {
-  0% { transform: translateY(100px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideDown {
-  0% { transform: translateY(-100px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1100px) {
-    main {
-        padding: 60px 50px;
-    }
+  header {
+    padding-inline: 30px;
+  }
 
-    .firstp {
-        padding-inline: 100px;
-    }
+  header nav .navigation {
+    gap: 15px;
+  }
 
-    .teachercv {
-        padding: 50px 100px;
-    }
+  header nav a {
+    font-size: 15px;
+  }
+  main {
+    padding: 60px 50px;
+  }
+
+  .firstp {
+    padding-inline: 100px;
+  }
+
+  .teachercv {
+    padding: 50px 100px;
+  }
+}
+
+@media (max-width: 990px) {
+  .social {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding-block: 15px;
+    width: 100%;
+  }
+
+  .headerContainer {
+    position: static;
+    height: auto;
+    padding-top: 10px;
+  }
+
+  main {
+    padding: 30px 20px;
+  }
+
+  .maincontainer {
+    gap: 50px;
+  }
 }
 
 @media (max-width: 800px) {
-    .headerContainer {
-        padding-inline: 20px;
-    }
+  .headerContainer {
+    padding-inline: 20px;
+  }
 
-    header nav .fa-bars {
-        display: block;
-        cursor: pointer;
-    }
+  header nav .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
 
-    header nav ul,
-    header nav a {
-        display: none;
-    }
+  header nav ul,
+  header nav a {
+    display: none;
+  }
 
-    main {
-        padding: 140px 30px 50px;
-    }
+  main {
+    padding: 140px 30px 50px;
+  }
 
-    .maincontainer {
-        margin-top: 30px;
-    }
+  .maincontainer {
+    margin-top: 30px;
+  }
 
-    .firsth1 {
-        font-size: 28px;
-    }
+  .firsth1 {
+    font-size: 28px;
+  }
 
-    .firstp {
-        padding-inline: 20px;
-        font-size: 15px;
-    }
+  .firstp {
+    padding-inline: 20px;
+    font-size: 15px;
+  }
 
-    .teachercv {
-        padding: 40px 30px;
-        margin-top: 50px;
-        gap: 20px;
-    }
+  .teachercv {
+    padding: 40px 30px;
+    margin-top: 50px;
+    gap: 20px;
+  }
 
-    .teachercv img {
-        width: 200px;
-        height: 200px;
-    }
+  .teachercv img {
+    width: 200px;
+    height: 200px;
+  }
 
-    .teachercv h1 {
-        font-size: 24px;
-    }
+  .teachercv h1 {
+    font-size: 24px;
+  }
 
-    .teachercv h3 {
-        font-size: 16px;
-    }
+  .teachercv h3 {
+    font-size: 16px;
+  }
 
-    .teachercv p {
-        font-size: 15px;
-        text-align: left;
-    }
+  .teachercv p {
+    font-size: 15px;
+    text-align: left;
+  }
 
-    footer .footerul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        text-align: center;
-    }
+  footer .footerul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 600px) {
-    .social {
-        display: none;
-    }
+  .social {
+    display: none;
+  }
 
-    .teachercv {
-        padding: 30px 20px;
-    }
+  .teachercv {
+    padding: 30px 20px;
+  }
 
-    .teachercv img {
-        width: 160px;
-        height: 160px;
-    }
+  .teachercv img {
+    width: 160px;
+    height: 160px;
+  }
 
-    .firstp {
-        padding-inline: 10px;
-    }
+  .firstp {
+    padding-inline: 10px;
+  }
 }
 
 @media (max-width: 500px) {
-    .social {
-        display: none;
-    }
+  .social {
+    display: none;
+  }
 
-    .chatButton {
-        width: 150px;
-        font-size: 16px;
-        gap: 8px;
-    }
+  .chatButton {
+    width: 150px;
+    font-size: 16px;
+    gap: 8px;
+  }
 
-    .headerContainer {
-        padding-inline: 15px;
-    }
+  .headerContainer {
+    padding-inline: 15px;
+  }
 
-    header .logo img {
-        height: 36px;
-        width: 36px;
-    }
+  header .logo img {
+    height: 36px;
+    width: 36px;
+  }
 
-    header .logo .name h1 {
-        font-size: 18px;
-    }
+  header .logo .name h1 {
+    font-size: 18px;
+  }
 
-    header .logo .name h4 {
-        display: none;
-    }
+  header .logo .name h4 {
+    display: none;
+  }
 
-    main {
-        padding: 140px 15px 40px;
-    }
+  main {
+    padding: 140px 15px 40px;
+  }
 
-    .maincontainer {
-        margin-top: 20px;
-        gap: 15px;
-    }
+  .maincontainer {
+    margin-top: 20px;
+    gap: 15px;
+  }
 
-    .firsth1 {
-        font-size: 24px;
-    }
+  .firsth1 {
+    font-size: 24px;
+  }
 
-    .firstp {
-        padding-inline: 0;
-        font-size: 14px;
-    }
+  .firstp {
+    padding-inline: 0;
+    font-size: 14px;
+  }
 
-    .teachercv {
-        padding: 20px 15px;
-        margin-top: 30px;
-        gap: 15px;
-        border-radius: 10px;
-    }
+  .teachercv {
+    padding: 20px 15px;
+    margin-top: 30px;
+    gap: 15px;
+    border-radius: 10px;
+  }
 
-    .teachercv img {
-        width: 140px;
-        height: 140px;
-    }
+  .teachercv img {
+    width: 140px;
+    height: 140px;
+  }
 
-    .teachercv h1 {
-        font-size: 20px;
-    }
+  .teachercv h1 {
+    font-size: 20px;
+  }
 
-    .teachercv h3 {
-        font-size: 15px;
-    }
+  .teachercv h3 {
+    font-size: 15px;
+  }
 
-    .teachercv p {
-        font-size: 13px;
-        text-align: left;
-    }
+  .teachercv p {
+    font-size: 13px;
+    text-align: left;
+  }
 
-    footer {
-        height: auto;
-        padding-block: 20px;
-    }
+  footer {
+    height: auto;
+    padding-block: 20px;
+  }
 
-    footer .footerul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
-    }
+  footer .footerul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
 }

@@ -52,12 +52,30 @@
                         <li><i class="fa-solid fa-circle-user"></i></li>
                     </ul>
                 </a>
-                <i class="fa-solid fa-bars"></i>
+                <i
+            onclick="burgerMenu.classList.toggle('show')"
+            class="fa-solid fa-bars"
+          ></i>
             </nav>
         </header>
     </div>
 
     <main>
+         <div id="burgerMenu" class="burgerMenu">
+        <ul class="burgerNavigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Our Classes</a></li>
+          <li><a href="teachers.html">Our Teachers</a></li>
+          <li><a href="prices.html">Pricing Plan</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="burgerLogina" href="login.html">
+          <ul class="burgerLogin" class="login">
+            <li>Log In</li>
+            <li><i class="fa-solid fa-circle-user"></i></li>
+          </ul>
+        </a>
+      </div>
         <div class="maincontainer">
             <h1 class="firsth1">Find Your Way</h1>
             <p class="firstp">Join one of our monthly plans. There is something for everyone</p>

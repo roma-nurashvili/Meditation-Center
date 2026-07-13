@@ -169,6 +169,71 @@ main {
   margin-bottom: 150px;
 }
 
+.burgerMenu {
+  height: 100svh;
+  width: 100%;
+  position: fixed;
+  top: 150px;
+  right: -100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: start;
+  background-color: white;
+  z-index: 999;
+  padding: 50px;
+  transition: 0.3s;
+}
+
+.burgerNavigation {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgerNavigation li {
+  background-color: #b6c8a5;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burgerNavigation li a {
+  text-decoration: none;
+  color: white;
+}
+
+.burgerLogin {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  background-color: #b6c8a5;
+  border-radius: 10px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgerLogina {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.show {
+  right: 0;
+}
+
 main .hero {
   height: 700px;
   width: 100%;
@@ -818,7 +883,7 @@ footer .footerul {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   header nav .fa-bars {
     display: block;
     cursor: pointer;

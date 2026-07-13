@@ -1,97 +1,138 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation Center</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="Logo/meditation-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meditation Center</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="Logo/meditation-svgrepo-com.svg" type="image/x-icon">
-  <link rel="stylesheet" href="login.css" />
-</head>
-
-<body>
-  <ul class="social">
-    <li>
-      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    </li>
-    <li>
-      <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-    </li>
-    <li>
-      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </li>
-  </ul>
-
-  <div class="headerContainer">
-    <header>
-      <a class="mainpage" href="index.html">
-        <div class="logo">
-          <img src="Logo/meditation-svgrepo-com white.svg" alt="logo">
-          <ul class="name">
-            <li>
-              <h1>om.be</h1>
-            </li>
-            <li>
-              <h4>Meditation Center</h4>
-            </li>
-          </ul>
-        </div>
-      </a>
-
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="classes.html">Our Classes</a></li>
-          <li><a href="teachers.html">Our Teachers</a></li>
-          <li><a href="prices.html">Pricing Plan</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <a href="login.html">
-          <ul class="login">
-            <li>Log In</li>
-            <li><i class="fa-solid fa-circle-user"></i></li>
-          </ul>
-        </a>
-        <i class="fa-solid fa-bars"></i>
-      </nav>
-    </header>
-  </div>
-  <div class="container">
-    <main>
-      <form>
-        <h2>Login to your account</h2>
-        <div class="inputform">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your Email..." required />
-          <label for="pass">Password</label>
-          <input type="password" id="pass" placeholder="Enter your Password..." required />
-        </div>
-        <div class="checking">
-          <div class="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <label for="checkbox">Remember me</label>
-          </div>
-          <a href="">Forgot password?</a>
-        </div>
-        <button>Login</button>
-        <a href="" class="register">Don't have an account? Create now!</a>
-      </form>
-    </main>
-  </div>
-
-  <footer>
-    <ul class="footerul">
-      <li>Terms & Conditions</li>
-      <li>Privacy Policy</li>
-      <li>Refund Policy</li>
-      <li>Accesibility</li>
-      <li>FAQ</li>
+  <body>
+    <ul class="social">
+      <li>
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://x.com" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </li>
     </ul>
-    <p class="footerp">© 2026 by om.be</p>
-  </footer>
-</body>
 
+    <div class="headerContainer">
+      <header>
+        <a class="mainpage" href="index.html">
+          <div class="logo">
+            <img src="Logo/meditation-svgrepo-com white.svg" alt="logo" />
+            <ul class="name">
+              <li>
+                <h1>om.be</h1>
+              </li>
+              <li>
+                <h4>Meditation Center</h4>
+              </li>
+            </ul>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Our Classes</a></li>
+            <li><a href="teachers.html">Our Teachers</a></li>
+            <li><a href="prices.html">Pricing Plan</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <a href="login.html">
+            <ul class="login">
+              <li>Log In</li>
+              <li><i class="fa-solid fa-circle-user"></i></li>
+            </ul>
+          </a>
+          <i
+            onclick="burgerMenu.classList.toggle('show')"
+            class="fa-solid fa-bars"
+          ></i>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container">
+      <main>
+        <div id="burgerMenu" class="burgerMenu">
+          <ul class="burgerNavigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Our Classes</a></li>
+            <li><a href="teachers.html">Our Teachers</a></li>
+            <li><a href="prices.html">Pricing Plan</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <a class="burgerLogina" href="login.html">
+            <ul class="burgerLogin" class="login">
+              <li>Log In</li>
+              <li><i class="fa-solid fa-circle-user"></i></li>
+            </ul>
+          </a>
+        </div>
+        <form>
+          <h2>Login to your account</h2>
+          <div class="inputform">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your Email..."
+              required
+            />
+            <label for="pass">Password</label>
+            <input
+              type="password"
+              id="pass"
+              placeholder="Enter your Password..."
+              required
+            />
+          </div>
+          <div class="checking">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Remember me</label>
+            </div>
+            <a href="">Forgot password?</a>
+          </div>
+          <button>Login</button>
+          <a href="" class="register">Don't have an account? Create now!</a>
+        </form>
+      </main>
+    </div>
+
+    <footer>
+      <ul class="footerul">
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Refund Policy</li>
+        <li>Accesibility</li>
+        <li>FAQ</li>
+      </ul>
+      <p class="footerp">© 2026 by om.be</p>
+    </footer>
+  </body>
 </html>
