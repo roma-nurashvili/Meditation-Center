@@ -157,6 +157,7 @@ header nav .login .fa-circle-user {
 main {
   width: 100%;
   max-width: 1440px;
+  height: auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
