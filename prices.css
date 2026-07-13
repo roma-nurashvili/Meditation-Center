@@ -197,7 +197,9 @@ main {
   justify-content: center;
 }
 
-.burgerNavigation li {
+.burgerNavigation a {
+  text-decoration: none;
+  color: white;
   background-color: #b6c8a5;
   border-radius: 10px;
   width: 100%;
@@ -205,11 +207,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.burgerNavigation li a {
-  text-decoration: none;
-  color: white;
 }
 
 .burgerLogin {

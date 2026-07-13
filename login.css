@@ -142,18 +142,20 @@ header nav .login .fa-circle-user {
 
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("https://images3.alphacoders.com/140/1402329.png");
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 140px; 
+  padding-bottom: 140px; 
 }
 
 main {
   width: 100%;
   max-width: 1440px;
-  height: 100vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -187,7 +189,9 @@ main {
   justify-content: center;
 }
 
-.burgerNavigation li {
+.burgerNavigation a {
+  text-decoration: none;
+  color: white;
   background-color: #5787AB;
   box-shadow: 0 0 5px 5px white;
   border-radius: 10px;
@@ -196,11 +200,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.burgerNavigation li a {
-  text-decoration: none;
-  color: white;
 }
 
 .burgerLogin {
@@ -228,10 +227,11 @@ main {
 
 form {
   width: 450px;
-  height: 550px;
+  height: auto;
+  min-height: 550px;
   backdrop-filter: blur(5px);
   box-shadow: 0 0 5px 5px white;
-  padding: 20px;
+  padding: 40px 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -244,6 +244,7 @@ form {
 form h2 {
   font-size: 30px;
   font-family: RobotoSlab;
+  text-align: center;
 }
 
 form a {
@@ -252,9 +253,10 @@ form a {
 }
 
 .register {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: underline;
-  margin-top: 50px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 strong {
@@ -350,18 +352,31 @@ footer .footerul {
   header {
     padding-inline: 30px;
   }
-
   header nav .navigation {
     gap: 15px;
   }
-
   header nav a {
     font-size: 15px;
   }
 }
 
+@media (max-width: 950px) {
+  header nav .fa-bars {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+  header nav ul,
+  header nav a {
+    display: none;
+  }
+  main {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 900px) {
- .social {
+  .social {
     position: fixed;
     top: 0;
     left: 0;
@@ -372,49 +387,33 @@ footer .footerul {
     backdrop-filter: blur(10px);
     z-index: 1001;
   }
-
   .headerContainer {
     padding-inline: 20px;
     position: fixed;
     top: 50px;
   }
+  
+  .container {
+    padding-top: 190px; 
+    padding-bottom: 150px;
+  }
 }
 
 @media (max-width: 800px) {
-  
-  header nav .fa-bars {
-    display: block;
-    cursor: pointer;
-    color: white;
-  }
-
-  header nav ul,
-  header nav a {
-    display: none;
-  }
-
-  main {
-    justify-content: center;
-  }
-
   form {
     width: 90%;
     max-width: 400px;
   }
-
   .inputform {
     width: 100%;
   }
-
   #email,
   #pass {
     width: 100%;
   }
-
   .checking {
     width: 100%;
   }
-
   footer .footerul {
     flex-wrap: wrap;
     justify-content: center;
@@ -444,16 +443,11 @@ footer .footerul {
     z-index: 1001;
   }
 
-  .chatButton {
-    width: 150px;
-    font-size: 16px;
-    gap: 8px;
-  }
-
   .headerContainer {
     padding-inline: 15px;
     position: fixed;
     top: 50px;
+    height: 80px; 
   }
 
   header .logo img {
@@ -470,6 +464,11 @@ footer .footerul {
     display: none;
   }
 
+  .container {
+    padding-top: 160px; 
+    padding-bottom: 150px; 
+  }
+
   main {
     justify-content: center;
     padding-inline: 15px;
@@ -478,6 +477,7 @@ footer .footerul {
   form {
     width: 100%;
     height: auto;
+    min-height: unset;
     padding: 25px 15px;
     gap: 15px;
   }
@@ -516,13 +516,14 @@ footer .footerul {
 
   footer {
     height: auto;
-    padding-block: 15px;
+    padding-block: 20px;
   }
 
   footer .footerul {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 12px;
     text-align: center;
   }
 }
